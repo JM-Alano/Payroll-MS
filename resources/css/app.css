@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Laravel View Sources */
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+  --font-Inter: 'Inter';
+
+  /* Color Palette */
+  --color-primary: #0A2B4C;      /* Deep Ocean Blue */
+  --color-secondary: #1e4872;    /* Sterling Silver */
+  --color-accent: #adc8e4;       /* Emerald Green */
+  --color-success: #28A745;
+  --color-warning: #D6A846;      /* Amber */
+  --color-info: #B0B7C1;
+  --color-background: #F8F9FA;   /* Off-white */
+  --color-text: #343A40;         /* Charcoal */
+  --color-accent-hover: #2a5d91;
+}
+
+
+/* HUMBER MENU BTN */
+.sidebar.active {
+    @apply w-30;
+}
+.sidebar.active nav {
+    @apply bg-red-200;
+}

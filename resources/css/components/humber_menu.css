@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+/* HUMBER MENU BTN & sidebar*/
+.sidebar.active {
+    @apply w-18;
+    @apply h-170;
+    @apply transition-all duration-500 ease-in-out;
+}
+.sidebar.active nav {
+   @apply bg-gray-900;
+    
+}
+.sidebar.active img,.sidebar.active .main_menu, .sidebar.active p{
+    @apply hidden
+}
+.sidebar.active nav svg{
+    @apply mt-5;
+}
+.sidebar.active ~  header{
+     @apply w-[calc(100%-85px)];
+    @apply ml-20;
+     @apply transition-all duration-500 ease-in-out;
+}
+.sidebar.active ~  main{
+    @apply w-[calc(100%-85px)];
+    @apply ml-20;
+    @apply transition-all duration-500 ease-in-out;
+}
