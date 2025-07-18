@@ -1,4 +1,4 @@
-<nav class="flex h-full min-h-0 flex-col  rounded-xl font-[var(--font-sans)] text-gray-100 dark:bg-gray-900 dark:text-gray-200">
+<nav class="flex h-full min-h-0 flex-col  rounded-sm font-[var(--font-sans)] text-gray-100 bg-[var(--color-primary)] shadow-lg">
 
   <!-- Top Section: Logo -->
   <div class="flex flex-col border-b border-zinc-950/5 p-4 dark:border-white/5">
@@ -12,7 +12,7 @@
   <!-- Main Navigation Section -->
   <div class="flex flex-1 flex-col overflow-y-auto p-4 font-sans">
     <div class="flex flex-col gap-2">
-      <h1 class="main_menu text-sm font-semibold opacity-70 mb-2">Main Menu</h1>
+    
 
   <div class="space-y-2" class="links">
 

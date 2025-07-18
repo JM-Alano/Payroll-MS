@@ -11,22 +11,15 @@
   --font-Inter: 'Inter';
 
   /* Color Palette */
-  --color-primary: #0A2B4C;      /* Deep Ocean Blue */
-  --color-secondary: #1e4872;    /* Sterling Silver */
-  --color-accent: #adc8e4;       /* Emerald Green */
-  --color-success: #28A745;
-  --color-warning: #D6A846;      /* Amber */
-  --color-info: #B0B7C1;
-  --color-background: #F8F9FA;   /* Off-white */
-  --color-text: #343A40;         /* Charcoal */
-  --color-accent-hover: #2a5d91;
-}
+   --color-primary: #0A2B4C;        /* Deep Ocean Blue — primary brand color */
+  --color-secondary: #ffffff;      /* Sterling Blue — navigation/sidebar */
+  --color-accent: #3828f7;         /* Vivid Indigo — buttons, highlights */
+  --color-accent-hover: #6255f9;   /* Soft Navy — hover states */
+  --color-success: #28A745;        /* Green — success alerts */
+  --color-warning: #D6A846;        /* Amber — warnings */
+  --color-info: #B0B7C1;           /* Light Steel — neutral info */
+  --color-background: #efefef;     /* Off-white — body background */
+  --color-text: #343A40;           /* Dark gray — primary text */
+  --color-border: #dee2eb;         /* Light gray — borders */
 
-
-/* HUMBER MENU BTN */
-.sidebar.active {
-    @apply w-30;
-}
-.sidebar.active nav {
-    @apply bg-red-200;
 }

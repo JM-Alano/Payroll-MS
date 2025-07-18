@@ -13,7 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
   ->withMiddleware(function (Middleware $middleware): void {
     $middleware->alias([
-        'prevent-Back' => PreventBack::class,
+        'admin_user' => PreventBack::class,
     ]);
     })
 

@@ -12,12 +12,8 @@ use App\Http\Controllers\SettingsController;
 use App\Http\Controllers\ReportsController;
 
 
-
-
-
-
 // Public Routes
-Route::middleware(['guest' , 'prevent-Back'])->group(function () {
+Route::middleware(['guest', 'admin_user'])->group(function () {
 
     Route::get('/', function () {
     return view ('index');
@@ -25,11 +21,17 @@ Route::middleware(['guest' , 'prevent-Back'])->group(function () {
 
     // Show login form;
     Route::get('/login', [LoginController::class, 'show'])->name('login');
-    Route::post('/loginProcess', [LoginController::class, 'process'])->name('login.process');
+    Route::post('/login/process', [LoginController::class, 'process'])->name('login.process');
 });
 
+
+  // Logout route
+    Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+
+
+
 // Protected Routes with PreventBack middleware
-Route::middleware(['auth', 'prevent-Back'])->group(function () {
+Route::middleware(['auth', 'admin_user'])->group(function () {
     // Dashboard route
     Route::get('/admin/dashboard', [DashboardController::class, 'show'])->name('dashboard');
       Route::get('/admin/employees', [EmployeesController::class, 'show'])->name('employees');
@@ -38,11 +40,10 @@ Route::middleware(['auth', 'prevent-Back'])->group(function () {
               Route::get('/admin/leave', [LeaveController::class, 'show'])->name('leave');
                 Route::get('/admin/reports', [ReportsController::class, 'show'])->name('reports');
                    Route::get('/admin/settings', [SettingsController::class, 'show'])->name('settings');
-                        Route::get('/admin/reports', [ReportsController::class, 'show'])->name('reports');
-            Route::get('/admin/_ess', [DashboardController::class, 'event'])->name('event');
+                      Route::get('/admin/reports', [ReportsController::class, 'show'])->name('reports');
+                           Route::get('/admin/_ess', [DashboardController::class, 'event'])->name('event');
              
 
 
-    // Logout route
-    Route::post('/logout', [LogoutController::class, 'logout'])->name('logout');
+              
 });

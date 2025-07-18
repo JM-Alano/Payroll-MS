@@ -12,7 +12,8 @@ class DashboardController extends Controller
       public function show()
     {
         Auth::check() ? redirect()->route('dashboard') : redirect()->route('login');
-        session()->flash('status', 'Logged in successfully!');
+       
+        
         
         return view('admin.dashboard.index');
     }    

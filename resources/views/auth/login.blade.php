@@ -37,6 +37,7 @@
 
   <body class="relative flex min-h-screen items-center justify-center overflow-hidden bg-white">
 
+   
     <!-- 🔵 Full-screen SVG Background -->
     <div class="absolute inset-0 z-0">
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1600 800" preserveAspectRatio="xMidYMid slice">
@@ -78,7 +79,7 @@
 
         <h2 class="mb-6 text-center text-3xl font-bold font-[var(--font-Inter)] text-[var(--color-primary)]">Login to your account</h2>
 
-        <form action="/loginProcess" method="POST" class="space-y-6">
+        <form action="/login/process" method="POST" class="space-y-6">
           @csrf
           <!-- Email -->
           <div>
@@ -112,10 +113,12 @@
            @error('email')
               <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
             @enderror
+
+       
           <!-- Submit Button -->
           <button
             type="submit"
-            class="w-full flex justify-center bg-[var(--color-primary)] hover:bg-[var(--color-accent-hover)] cursor-pointer text-white font-semibold py-2 rounded-md focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[var(--color-primary)]"
+            class="w-full flex justify-center bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] cursor-pointer text-white font-semibold py-2 rounded-md focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-[var(--color-primary)]"
           >
             Login
           </button>

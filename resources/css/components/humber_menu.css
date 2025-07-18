@@ -1,14 +1,15 @@
 @import 'tailwindcss';
 
+
 /* HUMBER MENU BTN & sidebar*/
 .sidebar.active {
     @apply w-18;
     @apply h-170;
     @apply transition-all duration-500 ease-in-out;
+
 }
 .sidebar.active nav {
-   @apply bg-gray-900;
-    
+    background-color: var(--color-primary);
 }
 .sidebar.active img,.sidebar.active .main_menu, .sidebar.active p{
     @apply hidden

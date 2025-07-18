@@ -6,7 +6,7 @@
 
 <div class="flex items-center gap-2">
 
-<p class="text-sky-800 flex justify-between items-center  p-2">JENMAR ALANO 
+<p class="text-white flex justify-between items-center  p-2">JENMAR ALANO 
   <svg xmlns="http://www.w3.org/2000/svg" width="30px" class="ml-5" viewBox="0 0 61.8 61.8" id="avatar">
   <g>
     <g>
@@ -28,10 +28,10 @@
   </g>
 </svg></p>
 
-  <span class="text-xl text-sky-700">|</span>
+  <span class="text-xl text-white">|</span>
 <form method="POST" action="{{ route('logout') }}">
     @csrf
-    <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:text-red-600 cursor-pointer" role="menuitem">Sign out</button>
+    <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-400 hover:text-red-600 cursor-pointer" role="menuitem">Sign out</button>
   </form>
 
    
